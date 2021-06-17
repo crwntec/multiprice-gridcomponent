@@ -1,0 +1,139 @@
+.container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px 10em;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "even-l even-m even-r"
+    "even-l even-m even-r";
+  width: 90%;
+  height: 85.2%;
+}
+
+.even-l {
+  width: 347px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "even-l-content even-l-content even-l-content"
+    "even-l-content even-l-content even-l-content";
+  grid-area: even-l;
+}
+
+.even-l-content { 
+  grid-area: even-l-content;
+  border-radius: 10px;
+  background-color: rgb(230, 230, 230);
+  padding: 15px;
+  
+}
+
+.even-m {
+  width: 347px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1.5fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "even-m-content even-m-content even-m-content"
+    "even-m-content even-m-content even-m-content";
+  grid-area: even-m;
+}
+
+.even-m-content { 
+  grid-area: even-m-content;
+  border-radius: 10px;
+  background-color: rgb(230, 230, 230);
+  padding: 15px;
+}
+
+.even-r {
+  width: 347px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "even-r-content even-r-content even-r-content"
+    "even-r-content even-r-content even-r-content";
+  grid-area: even-r;
+}
+
+.even-r-content { 
+  grid-area: even-r-content;
+  border-radius: 10px;
+  background-color: rgb(230, 230, 230);
+  padding: 15px;
+}
+.fa-check {
+  color: green;
+  font-size: 20px;
+}
+.fa-times {
+  color: red;
+  font-size: 20px;
+}
+.fa-crown {
+  color: rgb(255, 255, 0);
+  font-size: 55px;
+}
+.price-header{
+  text-align: center;
+}
+.feature {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.enroll {
+  text-align: center;
+  size: 60px;
+}
+.signup {
+  background-color: #4dd100; /* Green */
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.signup:hover{
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  text-align: center;
+}
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  color: green;
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: rgb(29,170,0);
+  background: linear-gradient(90deg, rgba(29,170,0,1) 0%,
+    rgba(29,217,47,1) 30%, rgba(0,212,255,1) 100%);
+}
